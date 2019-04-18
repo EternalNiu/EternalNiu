@@ -1,0 +1,59 @@
+.marker {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.buttonGroup {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  z-index: 999;
+}
+
+.buttonGroup2 {
+  position: absolute;
+  top: 122px;
+  right: 83px;
+  z-index: 999;
+  :global {
+    .ant-checkbox-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 0px;
+      border: 1px solid #ccc;
+      padding: 4px 8px;
+      border-radius: 3px;
+
+    }
+    .ant-checkbox-group {
+      display: flex;
+      flex-direction: column;
+      background: white;
+    }
+    .ant-checkbox-group-item > span:last-child {  
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid;
+      border-radius: 50%;
+      font-size: 12px;
+    }
+  }
+}
+
+.buttonGroup3 {
+  position: absolute;
+  top: 122px;
+  right: 146px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
