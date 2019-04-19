@@ -1,14 +1,17 @@
 {
   "name": "data-quality",
   "version": "0.0.1",
+  "homepage": ".",
   "description": "webpack 4.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.dev.js --open",
-    "build:test": "webpack --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.dev.js",
     "build:analyse": "webpack --config ./config/webpack.analyse.js",
     "build:prod": "webpack --config ./config/webpack.prod.js",
-    "doc": "jsdoc src -r"
+    "doc": "jsdoc src -r",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Gyuumaou",
   "license": "MIT",
@@ -19,6 +22,7 @@
     "css-element-queries": "^1.0.2",
     "echarts": "^4.2.1",
     "echarts-for-react": "^2.0.15-beta.0",
+    "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "prop-types": "^15.6.1",
     "rc-form": "^2.2.0",

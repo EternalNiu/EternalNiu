@@ -9,7 +9,7 @@ const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
  */
 module.exports = {
   appPath: resolveApp('.'),
-  appDist: resolveApp('dist'),
+  appDist: resolveApp('build'),
   appSrc: resolveApp('src'),
   utilPath: resolveApp('src/Util'),
   commonPath: resolveApp('src/Common'),

@@ -91,7 +91,7 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(['dist'], {
+    new CleanWebpackPlugin(['build'], {
       root: path.appPath,
       verbose: true,
     }),

@@ -15,7 +15,7 @@ import {hot} from 'react-hot-loader';
 import styles from './index.less';
 const {Header, Content} = Layout;
 import {withRouter} from 'react-router';
-
+import List from './List';
 import NavList from '../NavList/NavList';
 import HeaderSearch from '../HeaderSearch/HeaderSearch';
 
@@ -139,7 +139,7 @@ class AppFrame extends React.Component {
             </div>
           </Header>
           <Content className={className}>
-            {children}
+            <List />
           </Content>
         </Layout>
       </Layout>
